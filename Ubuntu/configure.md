@@ -1,0 +1,7 @@
+## Configuring Ubuntu
+
+## Terminal
+
+[//]: # (.bashrc)
+
+
