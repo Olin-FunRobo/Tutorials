@@ -6,6 +6,7 @@ Assuming that your OS is Ubuntu 14.04, this should be a very intuitive, linear p
 
 Otherwise, there are also [Other options](http://wiki.ros.org/ROS/Tutorials/InstallingIndigoInChroot) which utilizes Debootstrap to install indigo in a 14.04 image in a debian-based system.
 
+Below is a verbatim transcription of the official guide, with our comments for explanation.
 
 ## Explanation of the steps
 
