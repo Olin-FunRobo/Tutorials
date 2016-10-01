@@ -1,5 +1,9 @@
 # Git(hub) Tutorials
 
-[Basics](basics.md)
+Git is a version control system, and GitHub is, like the name suggests, a web service that provides convenient access to git repositories by making them available online.
 
-[SSH](ssh.md)
+In software engineering, GitHub has become an indispensible tool for both managing collaboration and keeping track of revision history.
+
+[Github Basics](basics.md)
+
+[Setting up Github for SSH](ssh.md)
