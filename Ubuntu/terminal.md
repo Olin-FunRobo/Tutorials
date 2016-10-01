@@ -109,3 +109,4 @@ If you want to look up a syntax for a command, or what it does, one of the three
 - `grep` - Search for String.
   - `grep <string> <file>` - search for a string in a file.
   - `grep -r <string> <directory>` - search for a string recursively.
+- `history` - Show your recent commands history.

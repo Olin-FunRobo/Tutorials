@@ -4,6 +4,20 @@ Software Tutorials for Olin College: ENGR3390 - Fundamentals of Robotics
 
 This repository (https://github.com/Olin-FunRobo/Tutorials) contains instructions or links to instructions for all of the software setup and tutorials that we will use in this class. We are going to develop software in the [Ubuntu](#ubuntu) operating system and use the [Clion](#clion) development environment to write C and C++ code. In addition, we will be using the [Robot Operating System (ROS)](#ros) framework for our code. See below for more information. To set up your system for this class, please install Ubuntu (see NINJAs for help), install Clion (instructions linked to below), and install ROS (instructions linked to below)
 
+## Table of Contents
+
+[C++ Tutorials](Cpp)
+
+[Git Tutorials](Git)
+
+[MicroController Tutorials](MicroControllers)
+
+[ROS Tutorials](ROS)
+
+[Ubuntu Tutorials](Ubuntu)
+
+## Motivations
+
 ### Ubuntu
 We are using ubuntu because it is easier to interact with the robot from a linux operating system. The Odroid we are using will also be running ubuntu, so you will be able to test code on your computer without having to deal with your robot all the time. Also, [ROS](#ros) plays well with Ubuntu.
 
