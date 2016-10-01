@@ -50,6 +50,29 @@ Here is an [Interactive Tutorial](https://try.github.io/) in 15 minutes.
 
 Just in case, I'll write a small reference for later:
 
+## Terminology
+
+**Push**
+
+**Pull**
+
+**Fetch**
+
+Tell Git to basically "update" but not necessarily add things to
+
+**Add**
+
+Stage files, tell Git to start tracking a file. "enqueue" a file
+Does not save, only adds to index the files that should be committed.
+
+**Commit**
+
+Tell Git to take snapshots, "save" your current status, create new version
+
+**Push**
+
+Tell Git to push it to the remote repository (i.e. sync the remote with your local version)
+
 ## Reference
 
 ### Initializing
