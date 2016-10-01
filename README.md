@@ -26,6 +26,21 @@ To get started with ubuntu, see the [ubuntu](Ubuntu) folder above.
 ### Clion
 Clion is a development environment which automatically does a lot of the annoying pieces of C++ programming for you. It's basic function is to act like a text editor, but it also has many functions to help you program, including a debugger, a syntax checker, a compiler, and an auto Cmake generator. (if you don't know what any of that means, that's ok, it will be helpful later).
 
+In detail:
+
+In Windows, Programmers often use Visual Studio for C/C++ Programming. It is a very mature, well-defined IDE that takes care of all the Linking/Compiling mess for you.
+
+In Ubuntu, there's no Visual Studio, so we sought alternative IDEs for C/C++ Development; our choice was CLion.
+
+Essentially, for beginner programmers it will find and catch small mistakes and tell you.
+
+Moreover, it is equipped with lots of useful features, such as autocompletion, syntax highlighting, etc., which makes programming a more enjoyable experience.
+
+There are alternative IDEs in Ubuntu that are great for C++ programming, like QtCreator.
+
+However, unlike QtCreator (QMake), CLion uses the same build system as ROS (CMake), so they are well compatible with each other.
+
+
 Instructions for installing and using Clion can be found in the [cpp](Cpp) folder above.
 
 ### ROS
