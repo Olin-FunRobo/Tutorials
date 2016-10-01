@@ -6,9 +6,6 @@
 
 ## Installing OpenCV
 
-
 ## Terminal
 
 [//]: # (.bashrc)
-
-

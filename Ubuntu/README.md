@@ -3,8 +3,11 @@
 ### In this Folder
 
 - Quick introduction (this page)
+
 - [Installation](install.md)
+
 - [Configuration](configure.md)
+
 - [FileSystem](filesystem.md)
 
 ### Extremely Common Terminal Commands

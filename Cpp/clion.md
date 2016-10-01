@@ -15,6 +15,7 @@ JetBrains offer free licenses to students to facilitate their learning experienc
 1. Go to the [Signup URL](https://www.jetbrains.com/student/).
 
 2. Click "Apply Now".
+![Apply](images/clion_apply.png)
 
 3. Enter your credentials, etc. and follow along the instructions.
 
@@ -25,6 +26,8 @@ JetBrains offer free licenses to students to facilitate their learning experienc
 2. Go to [Download URL](https://www.jetbrains.com/clion/download/)
 
 3. Click on the download link.
+
+![Download](images/clion_download.png)
 
 4. When Download finishes, decompress the archive:
 
@@ -41,7 +44,7 @@ JetBrains offer free licenses to students to facilitate their learning experienc
 	./clion.sh
 	```
 
-6. When you're first starting up, you hae an option to configure CLion. Default is probably fine for most purposes.
+6. When you're first starting up, you have an option to configure CLion. Default is probably fine for most purposes.
 
 7. Lock to Launcher
 
