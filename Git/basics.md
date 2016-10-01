@@ -1,5 +1,10 @@
 # Github Basics
 
+[Github Basics](https://guides.github.com/activities/hello-world/)
+
+[Git Basics](https://git-scm.com/doc)
+
+
 ## Setting up Github
 
 ### Installation
@@ -61,6 +66,8 @@ Tell Git to update local repository based on a remote
 Tell Git to basically "update metadata" but not necessarily modify things in the current working repository
 
 **Add**
+
+![Staging](images/staging.png)
 
 Stage files, tell Git to start tracking a file. "enqueue" a file
 Does not save, only adds to index the files that should be committed.

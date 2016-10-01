@@ -11,7 +11,7 @@ Below is a verbatim transcription of the official guide, with our comments for e
 ### Checking Upstream Repository Permissions
 1. Press the Super button (Windows Logo on Keyboard) to invoke the launcher.
 
-![Super Button](images/super.png)
+![Super Button](images/super.jpg)
 
 2. Type 'Software' and click on "Software and Updates."
 
