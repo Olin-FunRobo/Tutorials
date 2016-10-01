@@ -52,13 +52,13 @@ Just in case, I'll write a small reference for later:
 
 ## Terminology
 
-**Push**
-
 **Pull**
+
+Tell Git to update local repository based on a remote
 
 **Fetch**
 
-Tell Git to basically "update" but not necessarily add things to
+Tell Git to basically "update metadata" but not necessarily modify things in the current working repository
 
 **Add**
 
