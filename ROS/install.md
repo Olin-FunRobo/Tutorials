@@ -8,23 +8,61 @@ Otherwise, there are also [Other options](http://wiki.ros.org/ROS/Tutorials/Inst
 
 Below is a verbatim transcription of the official guide, with our comments for explanation.
 
-## Explanation of the steps
+### Checking Upstream Repository Permissions
+1. Press the Super button (Windows Logo on Keyboard) to invoke the launcher.
 
-Follow along on the ROS Installation Instructions while reading this guide. 
+![Super Button](images/super.png)
 
-Steps 1.1 to 1.3 are setting up your List of Repositories such that it would include ROS packages.
+2. Type 'Software' and click on "Software and Updates."
 
-In Step 1.4, install the full desktop version:
+![SWU](images/software_and_updates.png)
 
-```bash
-sudo apt-get install ros-indigo-desktop-full
-```
+3. Verify that all of the checkboxes for main, universe, restricted and multiverse are checked.
 
-In Step 1.6, the line:
+### Installing ROS
 
-```bash
-echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc
-source ~/.bashrc
-```
+1. Setup your computer to accept packages from packages.ros.org:
 
-configures your terminal so that it would recognize variables and commands related to ROS.
+	```bash
+	sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+	```
+
+2. Setup Keys for the KeyServer:
+
+	```bash
+	sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net --recv-key 0xB01FA116	
+	```
+
+3. Update your Repository Lists:
+
+	```bash
+	sudo apt-get update
+	```
+
+	Generally, it is considered good practice to update before installing packages.
+
+4. Install ROS, as full desktop version:
+
+	```bash
+	sudo apt-get install ros-indigo-desktop-full
+	```
+
+	Often, this would take a very long time. Connect your computer to an ethernet cable to not clog up the WiFi network.
+
+5. Initialize rosdep
+
+	```bash
+	sudo rosdep init
+	rosdep update
+	```
+	
+	rosdep is a convenient tool that allows you to automatically install dependencies for ros packages.
+
+6. Environment Setup
+
+	```bash
+	echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc
+	source ~/.bashrc	
+	```
+
+	This configures your terminal so that it would recognize variables and commands related to ROS.
