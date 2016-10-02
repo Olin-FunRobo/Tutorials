@@ -67,7 +67,7 @@ Tell Git to basically "update metadata" but not necessarily modify things in the
 
 **Add**
 
-![Staging](images/staging.png)
+![Staging](images/git_staging.png)
 
 Stage files, tell Git to start tracking a file. "enqueue" a file
 Does not save, only adds to index the files that should be committed.
