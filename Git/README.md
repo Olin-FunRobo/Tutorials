@@ -12,5 +12,7 @@ In software engineering, GitHub has become an indispensible tool for both managi
 
 [Github Basics](basics.md)
 
+[Fixes](fixes.md)
+
 [Setting up Github for SSH](ssh.md)
 
