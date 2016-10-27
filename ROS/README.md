@@ -23,5 +23,3 @@ By doing this, ROS standardizes the protocols, which allows for a modular design
 [Catkin Workspaces](catkin.md)
 
 [Working with Real Robots](robot.md)
-
-

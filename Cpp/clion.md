@@ -56,4 +56,25 @@ This part of the documentation is currently incomplete.
 
 [Here](https://www.jetbrains.com/clion/documentation/) is a video tutorial of the CLion IDE.
 
+## Setting up CLion for ROS
+
+Before running CLion, you must ensure that the ROS environment variables have been sourced.
+Check your .bashrc for the following lines:
+
+```bash
+source /opt/ros/indigo/setup.bash;
+source ~/catkin_ws/devel/setup.bash;
+```
+
+and then launch CLion from the terminal:
+
+```bash
+cd /bin
+./clion.sh
+```
+
+There are methods to configure CLion so that you can launch a desktop entry,
+
+but that information isn't here yet.
+
 [//]: # (Needs further documentation here)
