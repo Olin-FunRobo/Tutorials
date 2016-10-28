@@ -73,8 +73,32 @@ cd /bin
 ./clion.sh
 ```
 
-There are methods to configure CLion so that you can launch a desktop entry,
+## Creating a Desktop Entry
 
-but that information isn't here yet.
+Follow the [tutorial above](#setting-up-clion-for-ros) before following this guide.
 
-[//]: # (Needs further documentation here)
+Copy clion.desktop to your desktop directory and edit its contents:
+
+```bash
+cp clion.desktop ~/Desktop
+vim clion.desktop
+```
+
+You should see:
+
+```bash
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=CLion
+GenericName=Integrated Development Environment
+Icon=<YOUR_CLION_DIRECTORY>/bin/clion.svg
+Exec=bash -i -c <YOUR_CLION_DIRECTORY>/bin/clion.sh %f
+Comment=Develop with pleasure!
+Categories=Development;IDE;
+Terminal=false
+StartupWMClass=jetbrains-clion
+```
+
+From the file, replace <YOUR_CLION_DIRECTORY> with path to your clion directory.
+This configures this desktop entry to start clion in the terminial, effectively sourcing your ~/.bashrc.
