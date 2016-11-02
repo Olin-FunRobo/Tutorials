@@ -58,23 +58,33 @@ Most likely, in order to communicate with the arduino via ROS, you would want to
 
 In order to have the Arduino IDE recognize the serial port, you should add yourself to the usergroup with port read/write privileges.
 
-Create a file named 09-local.rules under /etc/udev/rules.d, i.e.
+First, add yourself to a group permitted to access plugged-in devices:
 
 ```bash
-sudo vim /etc/udev/rules.d/09-local.rules
+sudo usermod -a -G plugdev ${userName}
+```
+And replace userName with your linux username.
+
+Now, Create a file named 09-local.rules under /etc/udev/rules.d, i.e.
+
+```bash
+sudo vim /etc/udev/rules.d/09-usb.rules
 ```
 
 With the following content:
 
 ```bash
-SUBSYSTEMS=="usb", ATTRS{product}=="FT232R USB UART", ATTRS{idProduct}=="6001", ATTRS{idVendor}=="0403", SYMLINK+="arduino arduino_$attr{serial}"
-SUBSYSTEMS=="usb", ATTRS{product}=="ARDUINO NANO",    ATTRS{idProduct}=="6001", ATTRS{idVendor}=="0403", SYMLINK+="arduino arduino_nano_$attr{serial}"
-#Arduino UNO
-SUBSYSTEMS=="usb", ATTRS{idProduct}=="0043", ATTRS{idVendor}=="2341", SYMLINK+="arduino arduino_uno_$attr{serial}"
+SUBSYSTEMS=="usb", GROUP="plugdev", MODE="0666"
 ```
 
 Save the file and reboot. You should now be able to access the Arduino via serial port in the IDE.
+Alternatively, you can reload the rules without rebooting:
 
+```bash
+sudo udevadm control --reload-rules
+sudo udevadm trigger
+```
+However, You do have to restart the IDE.
 
 Helpful command to get information about a device:
 
